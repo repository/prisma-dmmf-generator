@@ -14,6 +14,6 @@
     "@prisma/generator-helper": "^5.11.0"
   },
   "scripts": {
-    "build": "bun ./build.ts"
+    "build": "bun build.js"
   }
 }

@@ -1,11 +1,14 @@
-import esbuild from "esbuild";
+const esbuild = require("esbuild");
 
 console.time("build");
-await esbuild.build({
-	entryPoints: ["src/index.ts"],
-	bundle: true,
-	outfile: "dist/index.js",
-	platform: "node",
-	packages: "external",
-});
-console.timeEnd("build");
+esbuild
+	.build({
+		entryPoints: ["src/index.ts"],
+		bundle: true,
+		outfile: "dist/index.js",
+		platform: "node",
+		packages: "external",
+	})
+	.then(() => {
+		console.timeEnd("build");
+	});
