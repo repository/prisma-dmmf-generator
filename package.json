@@ -1,11 +1,10 @@
 {
   "name": "@repository/prisma-dmmf-generator",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "files": ["dist"],
   "bin": {
     "prisma-dmmf-generator": "dist/index.js"
   },
-  "type": "module",
   "version": "0.0.1",
   "devDependencies": {
     "esbuild": "^0.20.2",
